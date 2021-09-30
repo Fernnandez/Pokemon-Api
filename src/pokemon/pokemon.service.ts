@@ -8,19 +8,25 @@ export class PokemonService {
   constructor(private readonly prisma: PrismaService) {}
 
   create(data: CreatePokemonDto) {
-    return this.prisma.pokemon.create({ data });
+    return this.prisma.pokemon.create({ data, include: { images: true } });
   }
 
   findAll() {
-    return this.prisma.pokemon.findMany();
+    return this.prisma.pokemon.findMany({ include: { images: true } });
   }
 
   findOne(id: number) {
-    return this.prisma.pokemon.findUnique({ where: { id } });
+    return this.prisma.pokemon.findUnique({
+      where: { id },
+      include: { images: true },
+    });
   }
 
   update(id: number, data: UpdatePokemonDto) {
-    return this.prisma.pokemon.update({ where: { id }, data });
+    return this.prisma.pokemon.update({
+      where: { id },
+      data,
+    });
   }
 
   remove(id: number) {

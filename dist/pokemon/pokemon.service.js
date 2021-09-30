@@ -17,19 +17,25 @@ let PokemonService = class PokemonService {
         this.prisma = prisma;
     }
     create(data) {
-        return this.prisma.pokemon.create({ data });
+        return this.prisma.pokemon.create({ data, include: { images: true } });
     }
     findAll() {
-        return this.prisma.pokemon.findMany();
+        return this.prisma.pokemon.findMany({ include: { images: true } });
     }
     findOne(id) {
-        return `This action returns a #${id} pokemon`;
+        return this.prisma.pokemon.findUnique({
+            where: { id },
+            include: { images: true },
+        });
     }
-    update(id, updatePokemonDto) {
-        return `This action updates a #${id} pokemon`;
+    update(id, data) {
+        return this.prisma.pokemon.update({
+            where: { id },
+            data,
+        });
     }
     remove(id) {
-        return `This action removes a #${id} pokemon`;
+        return this.prisma.pokemon.delete({ where: { id } });
     }
 };
 PokemonService = __decorate([

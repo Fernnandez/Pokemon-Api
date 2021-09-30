@@ -1427,8 +1427,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/.prisma/client/index.d.ts": {
-        "version": "f6473904fe9ce18fd92e536a0265529e497fe54d48ce16e5daf01d91c464063e",
-        "signature": "f6473904fe9ce18fd92e536a0265529e497fe54d48ce16e5daf01d91c464063e",
+        "version": "0d72b6342339c102a3534ba7ffbe65ca1a1238b0ea7b2ce190b28d64aaaf1a65",
+        "signature": "0d72b6342339c102a3534ba7ffbe65ca1a1238b0ea7b2ce190b28d64aaaf1a65",
         "affectsGlobalScope": false
       },
       "../node_modules/@prisma/client/index.d.ts": {
@@ -1442,8 +1442,8 @@
         "affectsGlobalScope": false
       },
       "../src/pokemon/entities/pokemon.entity.ts": {
-        "version": "4e26ab1f002b4f0dd48c8570fa21a86b1a9753988c84b0f8a441cb6f12de392e",
-        "signature": "9d93a7ea8d563ee2708123966216c17a38ad6516ec0ba042e8a1ca1aa52a77bb",
+        "version": "818a9bfcb7bd45dec60c74c590e4ab07203ee9d9d9bfcf6f743930959e5453d3",
+        "signature": "183bcfa79d19689d4ca1d9339f56afa23ddcb5775737d7f23fbd2e9deee256bc",
         "affectsGlobalScope": false
       },
       "../node_modules/class-validator/types/validation/validationerror.d.ts": {
@@ -2072,8 +2072,8 @@
         "affectsGlobalScope": false
       },
       "../src/pokemon/dto/create-pokemon.dto.ts": {
-        "version": "77bca20e8a2839060e0b427dee0290e9cad92ca6d088597808c67dfeaa6e7c3e",
-        "signature": "7923f4f0ac410d9521c6ff799587f4761137a76dec2ba1acc8969913ff6d20b5",
+        "version": "56138084e93f864459ac9a6d393fd1c5c664cdfa144698748ef9d5cf486d4054",
+        "signature": "ef91069f9710e2dfb34040e35f618b604d709b98eba5ebe02b362c26220b1ecf",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/mapped-types/dist/mapped-type.interface.d.ts": {
@@ -2122,13 +2122,13 @@
         "affectsGlobalScope": false
       },
       "../src/pokemon/pokemon.service.ts": {
-        "version": "8b74d50947dae43a4c543d5a14e78e53f64baab10f5dfca1753a0615ac132cab",
-        "signature": "5ab80aa62ec38625dc2ac8195b5d96d3906490e752cb3c719675c315868ea8dd",
+        "version": "aff5a77b59ee913dda056b5c0bc9a18a551c90614f7f5e4f2ef161ea050ff60c",
+        "signature": "da23e101771c074db93593d08b7c98b303d5bd10fac127bc265e7addc0c4734a",
         "affectsGlobalScope": false
       },
       "../src/pokemon/pokemon.controller.ts": {
-        "version": "6dafd22e43014ac0d5219450d777a1e54cbf1e40313e512e4bb980f6ba491ae4",
-        "signature": "993516ce0ca7aef9e81e756459fe51f4a953c76022825768c73a1de48bfca122",
+        "version": "9e9dca18e77bffd0ba940229739b01497b0bb82f9d29cfddb64fe132506067b1",
+        "signature": "867e644afd635cf20c80a2d83ee12efada12517bb69975b2b324b78dc9547871",
         "affectsGlobalScope": false
       },
       "../src/pokemon/pokemon.module.ts": {
@@ -4540,6 +4540,7 @@
         "../src/app.module.ts"
       ],
       "../src/pokemon/dto/create-pokemon.dto.ts": [
+        "../node_modules/@prisma/client/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
         "../src/pokemon/entities/pokemon.entity.ts"
       ],
@@ -6447,6 +6448,7 @@
         "../src/app.service.ts"
       ],
       "../src/pokemon/dto/create-pokemon.dto.ts": [
+        "../node_modules/@prisma/client/index.d.ts",
         "../src/pokemon/entities/pokemon.entity.ts"
       ],
       "../src/pokemon/dto/update-pokemon.dto.ts": [

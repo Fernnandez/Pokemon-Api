@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreatePokemonDto = void 0;
 const pokemon_entity_1 = require("../entities/pokemon.entity");
 const class_validator_1 = require("class-validator");
+const client_1 = require("@prisma/client");
 class CreatePokemonDto extends pokemon_entity_1.Pokemon {
 }
 __decorate([
@@ -23,5 +24,9 @@ __decorate([
     class_validator_1.IsOptional(),
     __metadata("design:type", Number)
 ], CreatePokemonDto.prototype, "height", void 0);
+__decorate([
+    class_validator_1.IsOptional(),
+    __metadata("design:type", Object)
+], CreatePokemonDto.prototype, "images", void 0);
 exports.CreatePokemonDto = CreatePokemonDto;
 //# sourceMappingURL=create-pokemon.dto.js.map
